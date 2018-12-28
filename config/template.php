@@ -34,6 +34,7 @@ return [
     'taglib_end'   => '}',
 
     'tpl_replace_string'  =>  [
-        "__COMPONENTS__" => "/static/bower_components",
+        "__COMPONENTS__" => "/static/admin-lte/bower_components",
+        "__ADMINLTE__" => "/static/admin-lte"
     ]
 ];
