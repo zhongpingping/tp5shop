@@ -18,6 +18,8 @@ class Base extends Controller
       "isLogin",
     ];
 
+
+    
     public function isLogin() {
         $user =Session::get("user");
         if(is_null($user)) {
