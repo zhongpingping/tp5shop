@@ -1920,9 +1920,12 @@ var addTabs = function (options) {
     options = $.extend(true, defaultTabOptions, options);
 
     if (options.urlType === "relative") {
-        // var url = window.location.protocol + '//' + window.location.host + "/";
-        var basePath = window.location.pathname + "/../";
-        options.url = basePath + options.url;
+        var fullUrl = window.location.href
+        var url = window.location.protocol + '//' + window.location.host + "/";
+        if(fullUrl.indexOf("index.php") > 0)
+            url = url + "index.php/";
+
+        options.url = url + options.url;
     }
 
     var pageId = options.id;

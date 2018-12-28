@@ -18,8 +18,6 @@ class User extends Base
     }
 
     public function changePassword() {
-
-
         return  $this->fetch();
     }
 }
