@@ -17,8 +17,6 @@ class Base extends Controller
     protected $beforeActionList = [
       "isLogin",
     ];
-
-
     
     public function isLogin() {
         $user =Session::get("user");
