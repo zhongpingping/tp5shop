@@ -11,6 +11,6 @@ class Index extends Base
     }
 
     public function welcome() {
-        echo "欢迎页面";
+        return $this->fetch();
     }
 }

@@ -2,22 +2,34 @@
 /**
  * Created by PhpStorm.
  * User: Administrator
- * Date: 2018/12/28
- * Time: 15:42
+ * Date: 2018/12/30
+ * Time: 12:03
  */
 
 namespace app\index\controller;
 
 
-use think\Controller;
+use think\Model;
 
 class User extends Base
 {
     public function show() {
-        return $this->fetch("profile");
+        $user = Model("User");
+        $data = $user->select();
+        $this->assign("list", $data);
+        return $this->fetch();
+
     }
 
-    public function changePassword() {
-        return  $this->fetch();
+    public function add() {
+
+    }
+
+    public function update() {
+
+    }
+
+    public function del() {
+
     }
 }

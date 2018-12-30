@@ -35,6 +35,7 @@ return [
 
     'tpl_replace_string'  =>  [
         "__COMPONENTS__" => "/static/admin-lte/bower_components",
-        "__ADMINLTE__" => "/static/admin-lte"
+        "__ADMINLTE__" => "/static/admin-lte",
+        "__STATIC__" => "/static"
     ]
 ];

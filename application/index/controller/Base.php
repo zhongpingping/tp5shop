@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Administrator
+ * Admin: Administrator
  * Date: 2018/12/28
  * Time: 15:43
  */
@@ -17,7 +17,7 @@ class Base extends Controller
     protected $beforeActionList = [
       "isLogin",
     ];
-    
+
     public function isLogin() {
         $user =Session::get("user");
         if(is_null($user)) {

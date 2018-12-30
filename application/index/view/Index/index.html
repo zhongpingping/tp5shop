@@ -7,7 +7,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 2 | Starter</title>
+  <title>后台管理系统</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <link rel="stylesheet" href="__COMPONENTS__/bootstrap/dist/css/bootstrap.min.css">
@@ -71,7 +71,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   <li><!-- start message -->
                     <a href="#">
                       <div class="pull-left">
-                        <!-- User Image -->
+                        <!-- Admin Image -->
                         <img src="__ADMINLTE__/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
                       </div>
                       <!-- Message title and timestamp -->
@@ -152,7 +152,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </li>
             </ul>
           </li>
-          <!-- User Account Menu -->
+          <!-- Admin Account Menu -->
           <li class="dropdown user user-menu">
             <!-- Menu Toggle Button -->
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -405,28 +405,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
         App.fixIframeCotent();
 
-        /*addTabs({
-         id: '10009',
-         title: '404',
-         close: true,
-         url: 'UI/buttons_iframe2.html'
-         });*/
 
-        /*
-         <li class="treeview">
-         <a href="#">
-         <i class="fa fa-edit"></i> <span>Forms</span>
-         <span class="pull-right-container">
-         <i class="fa fa-angle-left pull-right"></i>
-         </span>
-         </a>
-         <ul class="treeview-menu">
-         <li><a href="forms/general.html"><i class="fa fa-circle-o"></i> General Elements</a></li>
-         <li><a href="forms/advanced.html"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
-         <li><a href="forms/editors.html"><i class="fa fa-circle-o"></i> Editors</a></li>
-         </ul>
-         </li>
-         */
         var menus = [
             {
                 id: "9000",
@@ -443,13 +422,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         id: "90011",
                         text: "个人信息",
                         icon: "fa fa-user",
-                        url: "{:url('/index/user/show');}",
+                        url: "{:url('/index/admin/show');}",
                         targetType: "iframe-tab"
                     },
                     {
                         id: "90012",
                         text: "修改密码",
-                        url: "{:url('/index/user/changePassword');}",
+                        url: "{:url('/index/admin/changePassword');}",
                         targetType: "iframe-tab",
                         icon: "fa fa-wrench"
                     },
@@ -463,21 +442,21 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     {
                         id: "90021",
                         text: "员工管理",
-                        url: "https://www.qq.com",
+                        url: "{:url('/index/user/show')}",
                         targetType: "iframe-tab",
                         icon: "fa fa-users"
                     },
                     {
                         id: "90022",
                         text: "角色管理",
-                        url: "pages/forms/general.html",
+                        url: "{:url('/index/role/show')}",
                         targetType: "iframe-tab",
                         icon: "fa fa-paw"
                     },
                     {
                         id: "90023",
                         text: "权限管理",
-                        url: "pages/forms/editors.html",
+                        url: "{:url('/index/permission/show')}",
                         targetType: "iframe-tab",
                         icon: "fa fa-gear"
                     },
